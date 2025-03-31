@@ -1,0 +1,236 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+#main-header {
+    background-color: #a50d0d;
+    color: white;
+    text-align: center;
+    text-decoration-color: ;
+    padding: 20px;
+    border-bottom: 5px solid #810e0e;
+}
+
+/* Paragraph Styling */
+.text-content {
+    font-size: 18px;
+    line-height: 1.6;
+    color: rgb(20, 21, 21);
+    margin: 20px;
+    padding: 15px;
+    border-left: 5px solid hsl(53, 100%, 45%);
+    border-right: 8px solid hsl(53, 100%, 45%);
+    background-color: white;
+}
+@keyframes moveText {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(200px); }
+  }
+  
+  @keyframes spinMove {
+    0% { transform: translateX(0) rotate(0deg); }
+    50% { transform: translateX(100px) rotate(180deg); }
+    100% { transform: translateX(0) rotate(360deg); }
+  }
+  
+  @keyframes slideFade {
+    0% { opacity: 1; transform: translateX(0); }
+    90% { opacity: 1; transform: translateX(100vw); } /* Moves fully to the right */
+    100% { opacity: 0; transform: translateX(-100vw); } /* Disappears and restarts */
+  }
+  .text-container {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .text-content {
+    display: inline-block;
+    animation: marquee 12s linear infinite;
+  }
+  
+  @keyframes marquee {
+    0% { transform: translateX(100vw); } /* Start from right */
+    100% { transform: translateX(-100%); } /* Move to left and repeat */
+  }
+  
+/* Image Styling */
+.img-container img {
+    width: 70%;
+    max-width: 600px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 5px;
+    border: 3px solid #0073e6;
+}
+
+img {
+    width: 500px;  /* Set desired width */
+    height: 600px; /* Set desired height */
+  }
+  nav {
+    background-color: #333; /* Dark background */
+    padding: 10px 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 12px;
+    transition: 0.3s;
+  }
+  
+  nav ul li a:hover {
+    background-color: #555; /* Darker hover effect */
+    border-radius: 5px;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Sticky Navigation */
+nav {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Navigation Links */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 12px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f4a261; /* Highlight effect */
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    top: 100%;
+    left: 0;
+    width: 180px;
+}
+
+.dropdown-menu li {
+    padding: 10px;
+}
+
+.dropdown-menu li a {
+    display: block;
+    color: white;
+    padding: 10px;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #555;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Social Media Links */
+.social-links {
+    margin-left: auto;
+}
+
+.social-links a {
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+/* Hamburger Menu for Mobile */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        text-align: center;
+    }
+
+    nav ul.show {
+        display: block;
+    }
+
+    nav ul li {
+        padding: 15px 0;
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+    }
+}
