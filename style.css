@@ -1,0 +1,48 @@
+/* 1. ID selector */
+#main-header {
+    background-color: #e0f7fa;
+    padding: 20px;
+    border-bottom: 4px solid #00796b;
+    text-align: center;
+  }
+  
+  /* 2. Class selector */
+  .title {
+    font-family: 'Georgia', serif;
+    color: #004d40;
+    margin-bottom: 5px;
+  }
+  
+  .subtitle {
+    font-style: italic;
+    color: #00695c;
+  }
+  
+  /* 3. Element selector */
+  p {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.5;
+    color: #333;
+    padding: 10px;
+  }
+  
+  /* Style an image */
+  .styled-img {
+    width: 300px;
+    border: 5px solid #009688;
+    margin: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Footer styling with ID selector */
+  #footer-note {
+    background-color: #004d40;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  
